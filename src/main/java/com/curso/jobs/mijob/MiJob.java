@@ -21,7 +21,8 @@ public class MiJob {
         return factoriaDeJobs.get("mijob")
                 .repository( repositorioDeJobs ) // Una BBDD donde ir guardando los datos de los jobs que se han ejecutado..
                               // y los próximos programados
-                .start( mistep )
+                .flow( mistep )
+                .end()
                 .listener(miListenerDelJob)
                 .build();
     }
