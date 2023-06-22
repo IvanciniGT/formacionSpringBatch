@@ -6,16 +6,16 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
-@Qualifier("elItemReaderListener1")
-public class MiItemReaderListener implements ItemReadListener<MiItem> {
+@Qualifier("elItemReaderListener2")
+public class MiItemReaderListener2 implements ItemReadListener<MiItem> {
     @Override
     public void beforeRead() {
-        System.out.println("Antes de leer");
+        System.out.println("Antes de leer2");
     }
 
     @Override
     public void afterRead(MiItem miItem) {
-        System.out.println("Después de leer el item: " + miItem);
+        System.out.println("Después de leer el item2: " + miItem);
     }
 
     @Override

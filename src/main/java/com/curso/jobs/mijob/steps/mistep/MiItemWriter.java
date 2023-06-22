@@ -9,7 +9,9 @@ import java.util.List;
 @Component
 public class MiItemWriter implements ItemWriter<MiItemProcesado>{
 
-    @Override
+    @Override //No aporta nada funcional.
+    // Es una validación que hace el compilador para asegurarnos que realmente estamos
+    // Sobreescribiendo la función que viene por defecto en la interfaz
     public void write(List<? extends MiItemProcesado> list) throws Exception {
         list.forEach( System.out::println ); // Operador :: Me permite referencia a una función
                                              // Programación funcional

@@ -135,19 +135,19 @@ ESTO ES UN PROGRAMA USANDO UNA SINTAXIS IMPERATIVO
 
 miro si existe el fichero:
 SI existe:
-CORREO !!!!
-WHILE haya lineas en el fichero:
-leo 50 lineas
-FOR: cada uno de los 50:
-valido datos:
-- dni... IF no cuela? a por otro CONTINUE
-- emial.... si no cuela CONTINUE
-calculo la edad
-guardo en BBDD
-COMMIT !
-CORREO !!!!
+  CORREO !!!!
+  WHILE haya lineas en el fichero:
+    leo 50 lineas
+    FOR: cada uno de los 50:
+       valido datos:
+         - dni... IF no cuela? a por otro CONTINUE
+         - email.... si no cuela CONTINUE
+       calculo la edad
+       guardo en BBDD
+    COMMIT !
+  CORREO !!!!
 
-    // Tradicionalmente el programador especifica la secuencia de decisiones y procedimientos que pueden darse durante el ciclo de vida de un programa mediante llamadas a funciones
+      // Tradicionalmente el programador especifica la secuencia de decisiones y procedimientos que pueden darse durante el ciclo de vida de un programa mediante llamadas a funciones
 
 ---
 

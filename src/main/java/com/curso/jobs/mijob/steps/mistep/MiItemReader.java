@@ -27,6 +27,7 @@ public class MiItemReader {
     // Que es el ItemRead<MiItem> que yo he configurado pa ti!
     public ItemReader<MiItem> configuracionDelItemReader( FieldSetMapper<MiItem> mapeador ) { // Inyección de dependencias
         return new FlatFileItemReaderBuilder<MiItem>()
+                .name("miItemReader")
                 .resource(new ClassPathResource(nombreFicheroItems))
                 .delimited()
                 .names("nombre", "apellidos", "fechaNacimiento", "email", "dni")
