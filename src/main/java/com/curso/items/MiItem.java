@@ -1,16 +1,16 @@
-package com.curso;
+package com.curso.items;
 
 import lombok.Data;
 
-import java.time.ZonedDateTime;
+import java.time.LocalDate;
 
 @Data
-public class Persona { // POJO
+public class MiItem { // Persona
 
     private String nombre;
     private String apellidos;
     private String email;
     private String dni;
-    private ZonedDateTime fechaNacimiento;
+    private LocalDate fechaNacimiento;
 
 }
